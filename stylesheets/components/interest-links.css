@@ -1,1 +1,63 @@
 /* Your code here */
+.interest__links {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 0.75fr;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.interests-bar__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.interests-bar__headline {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.interests-bar__story {
+    font-size: 13px;
+}
+
+.stock-AAO {
+    border-bottom: 1 solid black;
+    flex-direction: row;
+}
+
+.stock-quote {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    flex-direction: column; 
+    gap: 5px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+.interests-bar__stock-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interests-bar__price {
+    color: rgb(34, 237, 34);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.stock-AAO, .stock-SWE {
+    border-bottom: 1px solid black;
+}
+
+.interests-bar__big-text {
+    font-weight: bold;
+}
