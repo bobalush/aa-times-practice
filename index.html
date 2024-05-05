@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="stylesheets/components/main-nav.css" />
     <link rel="stylesheet" href="stylesheets/components/interest-links.css" />
     <link rel="stylesheet" href="stylesheets/components/main-content.css" />
-    
+    <link rel="stylesheet" href="stylesheets/components/gear-dropdown.css" />
+
 </head>
 <body>
     <header>
@@ -35,7 +36,29 @@
                     <button type="button" class="button">Log In</button>
                 </div>
                 <div>
-                    <i class="fas fa-cog"></i>
+                    <i class="fas fa-cog">
+                        <div class="pref pref--hidden">
+
+                            <div class="pref__section">
+                              <div class="pref__section-header">Edition</div>
+                              <ul>
+                                <li class="pref__section-link"><a href="#">CSS</a></li>
+                                <li class="pref__section-link"><a href="#">HTML</a></li>
+                                <li class="pref__section-link"><a href="#">JavaScript</a></li>
+                                <li class="pref__section-link"><a href="#">Python</a></li>
+                              </ul>
+                            </div>
+                            <div class="pref__section">
+                              <div class="pref__section-header">Help</div>
+                              <ul>
+                                <li class="pref__section-link"><a href="#">FAQ</a></li>
+                                <li class="pref__section-link"><a href="#">Contact Us</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                    </i>
+                    
+                      
                 </div>
             </div>
            <!-- <div></div> -->
@@ -268,5 +291,7 @@
     <footer>
 
     </footer>
+
+    <script src="scripts/event-handling.js"></script>
 </body>
 </html>
