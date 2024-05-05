@@ -1,13 +1,12 @@
 /* Your code here */
-.main__content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    gap: 10px;
-    width: 100%;
-  /*   margin: 1px;
-    border: 1px; */
-}
+
+
+    .main__content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+     
+    }
 
 
 .opinions {
@@ -100,4 +99,21 @@
     height: auto; /* maintian the aspect ration while resizing */
     display: block;
     margin-bottom: 10px;
+}
+
+
+@media (max-width: 1200px) {
+    .opinions, .testimonials {
+        display: none;
+    }
+
+    .main__content {
+        grid-template-columns: 2fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main, .interest__links {
+        display: none;
+    }
 }
