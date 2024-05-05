@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="stylesheets/components/interest-links.css" />
     <link rel="stylesheet" href="stylesheets/components/main-content.css" />
     <link rel="stylesheet" href="stylesheets/components/gear-dropdown.css" />
-
+    <link rel="stylesheet" href="stylesheets/components/search-modal.css" />
 </head>
 <body>
     <header>
@@ -24,7 +24,12 @@
                     <i class="fa fa-bars masthead__menu-and-search-buttons"></i>
                 </div>
                 <div>
-                    <i class="fa fa-search masthead__menu-and-search-buttons"></i>
+                    <i class="fa fa-search masthead__menu-and-search-buttons">
+                        <div class="search-modal search-modal--hidden">
+                            <input type="search" class="search-modal__input" placeholder="Search">
+                            <button class="search-model__go">Go</button>
+                          </div>
+                    </i>
                 </div>
             </div>
            <!--  <div></div> -->
